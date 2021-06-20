@@ -9,7 +9,6 @@ const Navi = () => {
 
   const hamburger = useRef();
   const mobile_menu = useRef();
-  const topButton = useRef();
 
   const onMenuClick = () => {
     hamburger.current.classList.toggle('active');

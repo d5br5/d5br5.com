@@ -18,7 +18,7 @@ const Experience = () => {
                 서울대학교
               </h3>
               <h5>Seoul Nat'l University</h5>
-              <h4>2015 -</h4>
+              <h4>2015 - 2022</h4>
             </div>
             <div className="desc">
               <p>기계공학 전공</p>
