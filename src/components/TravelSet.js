@@ -5,7 +5,7 @@ const TravelSet = ({src, country, details}) =>{
     </div>
     <div className="desc">
       <div className="name">{country}</div>
-      {details.map(detail=><div className="detail">{detail}</div>)}
+      {details.map((detail, index)=><div key={index} className="detail">{detail}</div>)}
     </div>
   </div>
 }

@@ -1,8 +1,10 @@
+
 import {css, express, html, javascript, mongodb, mysql, nodejs, php, python, react} from './images';
 import {china, japan, south_korea, spains, united_states} from './images';
 import {illustrator, indesign, photoshop, premier} from './images';
 import {excel, github, gsuit, hancom, notion, powerpoint, slack, word, surge, vercel} from './images';
 
+import '../css/Skill.css';
 import SkillSet from '../components/SkillSet';
 
 const Skill = () => {
@@ -23,10 +25,10 @@ const Skill = () => {
           <SkillSet toolImg={php} toolName="PHP" level='3'/>
           <SkillSet toolImg={mysql} toolName="MySQL" level='3'/>
           <SkillSet toolImg={mongodb} toolName="MongoDB" level='2'/>
-          <SkillSet toolImg={express} toolName="ExpressJS" level='2'/>
-          <SkillSet toolImg={nodejs} toolName="NodeJS" level='2'/>
+          <SkillSet toolImg={express} toolName="Express.js" level='2'/>
+          <SkillSet toolImg={nodejs} toolName="Node.js" level='2'/>
           <SkillSet toolImg={python} toolName="Python" level='2'/>
-          <SkillSet toolImg={react} toolName="ReactJs" level='3'/>
+          <SkillSet toolImg={react} toolName="React.js" level='3'/>
         </div>
         <hr/>
         <h2>Design</h2>

@@ -1,3 +1,5 @@
+import '../css/Hobby.css';
+
 import {
   macao,
   china,

@@ -1,0 +1,41 @@
+/*Contact Section*/
+
+#contact {
+    background-color: var(--low);
+    position: relative;
+    z-index: 1;
+}
+
+#contact .contact {
+    flex-direction: column;
+    text-align: center;
+    min-height: 20vh;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+#contact .contact .list {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    margin-top: 20px;
+}
+
+#contact .contact .item {
+    flex-basis: 15%;
+    justify-content: center;
+    width: 15%;
+    height: 15%;
+    margin: 0 auto;
+}
+
+#contact .contact .list .item .bi {
+    width: 35px;
+    height: 40px;
+    fill: var(--high);
+    transition: 0.3s ease;
+}
+
+#contact .contact .list .item a:hover .bi {
+    fill: gray;
+}

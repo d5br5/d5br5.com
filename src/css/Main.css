@@ -1,0 +1,50 @@
+/*Main Section*/
+
+#main {
+    background-color: var(--low);
+    position: relative;
+    z-index: 1;
+}
+
+#main .main {
+    margin: 0 auto;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#main h1 {
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1s;
+    position: relative;
+    color: transparent;
+}
+
+#main .description h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: var(--high);
+    animation: text_reveal_box 1s ease;
+    animation-delay: .5s;
+}
+
+#main .main .profile {
+    width: 30%;
+    border-radius: 50%;
+    border: 4px solid var(--high);
+    overflow: hidden;
+    margin: 20px auto;
+    font-size: 0;
+}
+
+#main .main .description {
+    align-items: center;
+}
+
+#main .main .description h1 {
+    font-size: 10rem;
+    text-transform: initial;
+}

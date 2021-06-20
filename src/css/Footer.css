@@ -1,0 +1,22 @@
+.footer {
+    background-color: var(--low);
+}
+
+.footer p {
+    margin: 0 auto;
+    padding-bottom: 20px;
+    font-weight: 400;
+    font-size: 1.5rem;
+    width: max-content;
+    letter-spacing: 0.05rem;
+    transition: 0.3s ease;
+}
+
+.footer a {
+    width: max-content;
+    transition: 0.3s ease;
+}
+
+.footer a:hover p {
+    color: gray;
+}

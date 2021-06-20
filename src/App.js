@@ -6,6 +6,7 @@ import Hobby from "./routes/Hobby";
 import Contact from "./routes/Contact";
 import Footer from "./routes/Footer";
 
+
 function App() {
   return (
     <div className="App">

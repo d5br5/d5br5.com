@@ -1,4 +1,5 @@
 import ContactSet from "../components/ContactSet";
+import '../css/Contact.css';
 
 const Contact = () => {
 
