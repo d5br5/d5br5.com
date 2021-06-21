@@ -20,3 +20,30 @@
 .footer a:hover p {
     color: gray;
 }
+
+
+@media only screen and (max-width:500px) {
+
+    .title p {
+        font-size: 1.5rem;
+    }
+    .section-title {
+        font-size: 3.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.6rem;
+    }
+    h5,
+    p,
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    .footer p {
+        font-size: 1.2rem;
+    }
+
+}

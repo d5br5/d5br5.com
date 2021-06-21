@@ -135,3 +135,74 @@
     text-align: left;
     font-weight: 400;
 }
+
+@media only screen and (max-width:400px) {
+    #exp .exp .item .info {
+        padding-left: 20px;
+        height: 6.5rem;
+    }
+    #exp .exp .item {
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    #exp .exp-bottom .exp-item {
+        flex-basis: 80%;
+        margin: 1.5%;
+        min-height: 200px;
+    }
+
+    #exp .exp .item {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .title p {
+        font-size: 1.5rem;
+    }
+    .section-title {
+        font-size: 3.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.6rem;
+    }
+    h5,
+    p,
+    h4 {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media only screen and (min-width:500px) and (max-width:700px) {
+    #exp .exp-bottom .exp-item {
+        flex-basis: 80%;
+        margin: 1.5%;
+        min-height: 300px;
+    }
+
+}
+
+@media only screen and (max-width:700px) {
+
+    #exp .exp-bottom a {
+        flex-basis: 90%;
+        height: initial;
+    }
+    #exp .exp .exp-bottom p {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media only screen and (min-width:700px) {
+
+    #exp .exp-bottom .exp-item {
+        flex-basis: 45%;
+        margin: 1.5%;
+        min-height: 250px;
+    }
+}

@@ -39,3 +39,38 @@
 #contact .contact .list .item a:hover .bi {
     fill: gray;
 }
+
+
+@media only screen and (max-width:500px) {
+    .title p {
+        font-size: 1.5rem;
+    }
+    .section-title {
+        font-size: 3.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.6rem;
+    }
+    h5,
+    p,
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    #contact .contact .list .item .bi {
+        width: 25px;
+        height: 40px;
+    }
+    #contact .contact .list {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width:500px) and (max-width:700px) {
+    #contact .contact .list {
+        width: 60%;
+    }
+}

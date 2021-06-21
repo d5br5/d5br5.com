@@ -267,8 +267,6 @@ hr {
   color: var(--low);
 }
 
-
-
 @keyframes hamburger_puls {
   0% {
     opacity: 1;
@@ -303,36 +301,9 @@ hr {
   }
 }
 
-@media only screen and (max-width:400px) {
-  #exp .exp .item .info {
-    padding-left: 20px;
-    height: 6.5rem;
-  }
-  #exp .exp .item {
-    margin-top: 15px;
-  }
-}
 
 @media only screen and (max-width:500px) {
-  #exp .exp-bottom .exp-item {
-    flex-basis: 80%;
-    margin: 1.5%;
-    min-height: 200px;
-  }
-  #skill .skill .skillset:hover .skillful {
-    letter-spacing: 0.35rem;
-  }
-  #skill .skill .items .itemlist .skillname,
-  .skillful {
-    font-size: 1.5rem;
-  }
-  #main .main .description h1 {
-    font-size: 5rem;
-  }
-  #exp .exp .item {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
+
   .title p {
     font-size: 1.5rem;
   }
@@ -350,93 +321,5 @@ hr {
   h4 {
     font-size: 1.2rem;
   }
-  #hobby .hobby .items .itemlist .exerciseset .name {
-    font-size: 1.6rem;
-  }
-  #hobby .hobby .items .travelset {
-    margin: 15px 0;
-  }
-  #hobby .hobby .items .travelset .country {
-    flex-basis: 15%;
-  }
-  #hobby .hobby .items .travelset .name {
-    margin-top: 0;
-  }
-  .footer p {
-    font-size: 1.2rem;
-  }
-  #contact .contact .list .item .bi {
-    width: 25px;
-    height: 40px;
-  }
-  #contact .contact .list {
-    width: 50%;
-  }
 }
 
-@media only screen and (min-width:500px) and (max-width:700px) {
-  #exp .exp-bottom .exp-item {
-    flex-basis: 80%;
-    margin: 1.5%;
-    min-height: 300px;
-  }
-  #main .main .description h1 {
-    font-size: 7rem;
-  }
-  #contact .contact .list {
-    width: 60%;
-  }
-}
-
-@media only screen and (max-width:700px) {
-  #main .main .profile {
-    width: 70%;
-  }
-  h1.section-title {}
-  #exp .exp-bottom a {
-    flex-basis: 90%;
-    height: initial;
-  }
-  #exp .exp .exp-bottom p {
-    margin-bottom: 10px;
-  }
-  #skill .skill .skillset {
-    flex-basis: 90%;
-  }
-  #skill .skill .itemlist {
-    justify-content: center;
-  }
-  #hobby .hobby .items .travelset {
-    flex-basis: 90%;
-  }
-}
-
-@media only screen and (min-width:700px) {
-  #header .hamburger {
-    display: none;
-  }
-  #header .nav-bar {
-    width: initial;
-  }
-  #header .nav-list ul {
-    position: initial;
-    display: block;
-    height: auto;
-    width: fit-content;
-    background-color: transparent;
-  }
-  #header .nav-list ul li {
-    display: inline-block;
-  }
-  #header .nav-list ul li a {
-    font-size: 1.7rem;
-  }
-  #header .nav-list ul a::after {
-    display: none;
-  }
-  #exp .exp-bottom .exp-item {
-    flex-basis: 45%;
-    margin: 1.5%;
-    min-height: 250px;
-  }
-}

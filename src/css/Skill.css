@@ -67,3 +67,44 @@
     color: var(--high);
     padding-bottom: 3px;
 }
+
+
+@media only screen and (max-width:500px) {
+
+    #skill .skill .skillset:hover .skillful {
+        letter-spacing: 0.35rem;
+    }
+    #skill .skill .items .itemlist .skillname,
+    .skillful {
+        font-size: 1.5rem;
+    }
+
+    .title p {
+        font-size: 1.5rem;
+    }
+    .section-title {
+        font-size: 3.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.6rem;
+    }
+    h5,
+    p,
+    h4 {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media only screen and (max-width:700px) {
+
+    #skill .skill .skillset {
+        flex-basis: 90%;
+    }
+    #skill .skill .itemlist {
+        justify-content: center;
+    }
+}
