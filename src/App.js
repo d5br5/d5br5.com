@@ -1,22 +1,25 @@
 import Navi from "./routes/Navi";
 import Main from "./routes/Main";
 import Skill from "./routes/Skill";
-import Experience from "./routes/Experience";
 import Hobby from "./routes/Hobby";
 import Contact from "./routes/Contact";
 import Footer from "./routes/Footer";
-
+import {ThemeProvider} from "styled-components";
+import theme from "./theme";
+import GlobalStyle from "./components/GlobalStyle";
 
 function App() {
   return (
     <div className="App">
-      <Navi/>
-      <Main/>
-      <Skill/>
-      <Experience/>
-      <Hobby/>
-      <Contact/>
-      <Footer/>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle/>
+        <Navi/>
+        <Main/>
+        <Skill/>
+        <Hobby/>
+        <Contact/>
+        <Footer/>
+      </ThemeProvider>
     </div>
   );
 }

@@ -1,5 +1,31 @@
 import ContactSet from "../components/ContactSet";
-import '../css/Contact.css';
+
+import styled from 'styled-components';
+import {Title, TitleHeader} from '../common';
+
+const ContactContainer = styled.div`
+  flex-direction: column;
+  text-align: center;
+  min-height: 20vh;
+  margin: 0 auto;
+  padding: 50px 0;
+  background-color: var(--low);
+  position: relative;
+  z-index: 1;
+`;
+
+const ContactList = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 20%;
+  margin: 20px auto 0;
+  @media ${(props)=>props.theme.tabletS}{
+    width: 50%;
+  }
+  @media ${(props)=>props.theme.tabletM}{
+    width: 60%;
+  }
+`;
 
 const Contact = () => {
 
@@ -8,20 +34,18 @@ const Contact = () => {
   const facebookPath = "M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z";
   const mailPath = "M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z";
 
-  return <section id="contact">
-    <div className="contact container">
-      <div className="title">
-        <h1 className="section-title">Contact</h1>
-        <p></p>
-      </div>
-      <div className="list">
-        <ContactSet href="https://github.com/d5br5" icon="github" path={githubPath}/>
-        <ContactSet href="https://www.instagram.com/d5._.br5/" icon="instagram" path={instagramPath}/>
-        <ContactSet href="https://www.facebook.com/ehgud456456/" icon="facebook" path={facebookPath}/>
-        <ContactSet href="mailto:dohkim777@gmail.com" icon="envelope" path={mailPath}/>
-      </div>
-    </div>
-  </section>
+  return <ContactContainer id="contact">
+    <Title>
+      <TitleHeader>Contact</TitleHeader>
+    </Title>
+    <ContactList>
+      <ContactSet href="https://github.com/d5br5" icon="github" path={githubPath}/>
+      <ContactSet href="https://www.instagram.com/d5._.br5/" icon="instagram" path={instagramPath}/>
+      <ContactSet href="https://www.facebook.com/ehgud456456/" icon="facebook" path={facebookPath}/>
+      <ContactSet href="mailto:dohkim777@gmail.com" icon="envelope" path={mailPath}/>
+    </ContactList>
+
+  </ContactContainer>
 }
 
 export default Contact;

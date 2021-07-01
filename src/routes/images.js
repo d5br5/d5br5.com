@@ -35,7 +35,7 @@ import react from '../img/skill/programming/react.png';
 //design
 import illustrator from '../img/skill/design/illustrator.png';
 import indesign from '../img/skill/design/indesign.png';
-import photoshop from  '../img/skill/design/photoshop.png';
+import photoshop from '../img/skill/design/photoshop.png';
 import premier from '../img/skill/design/premier.png';
 
 //office
